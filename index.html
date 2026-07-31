@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gastos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header>
+        <form id="gastoForm" autocomplete="off">
+            <label for="inputGasto">Nombre del gasto</label>
+            <input type="text" name="nombre" id="inputGasto" required>
+            <label for="inputPrecio">precio del gasto</label>
+            <input type="number" name="precio" min="0" id="inputPrecio"required>
+            <label for="categoria">precio del gasto</label>
+            <select name="categoria" id=categoria"required>
+                <option value="" selected disabled">Seleccionar Categoria</option>
+                <option value="comida">comida</option>
+                <option value="transporte">transporte</option>
+                <option value="entretenimiento">entretenimiento</option>
+                <option value="servicio">servicio</option>
+                <option value="personal">personal</option>
+            </select>
+            <button type="submit">+</button>
+        </form>
+        <section class="gastoContainer" id = "gastoContainer">
+        </section>
+    </header>
 
 
 
-
-    <script src="script.js1"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
